@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="gTV-IL-0wX" customClass="MovieCell" customModule="CueMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-movieimage" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-10-9kW">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="154.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-VU-RqF">
+                        <rect key="frame" x="0.0" y="154.5" width="140" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Btg-LT-lsf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa6-i7-bbR">
+                        <rect key="frame" x="0.0" y="175.5" width="90" height="17.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM0-kX-8eO">
+                        <rect key="frame" x="90" y="165.5" width="50" height="27.5"/>
+                        <state key="normal" image="icons8-like"/>
+                        <connections>
+                            <action selector="likeTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JaP-X6-MhA"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fa6-i7-bbR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="07m-zO-8s8"/>
+                <constraint firstItem="FM0-kX-8eO" firstAttribute="top" secondItem="fa6-i7-bbR" secondAttribute="top" constant="-10" id="F9Q-UC-4ru"/>
+                <constraint firstItem="mUl-10-9kW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hkx-CJ-yEn"/>
+                <constraint firstItem="rPc-VU-RqF" firstAttribute="top" secondItem="mUl-10-9kW" secondAttribute="bottom" id="JN5-XP-1kw"/>
+                <constraint firstItem="mUl-10-9kW" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="LaG-7X-7lx"/>
+                <constraint firstItem="FM0-kX-8eO" firstAttribute="bottom" secondItem="fa6-i7-bbR" secondAttribute="bottom" id="Ph9-6X-hFa"/>
+                <constraint firstAttribute="trailing" secondItem="fa6-i7-bbR" secondAttribute="trailing" constant="50" id="QQA-AI-eqd"/>
+                <constraint firstAttribute="trailing" secondItem="rPc-VU-RqF" secondAttribute="trailing" id="UgY-3A-s2v"/>
+                <constraint firstAttribute="bottom" secondItem="fa6-i7-bbR" secondAttribute="bottom" id="VE8-9f-06H"/>
+                <constraint firstItem="mUl-10-9kW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XTz-TQ-GiE"/>
+                <constraint firstAttribute="trailing" secondItem="FM0-kX-8eO" secondAttribute="trailing" id="Zh9-9w-pha"/>
+                <constraint firstItem="fa6-i7-bbR" firstAttribute="top" secondItem="rPc-VU-RqF" secondAttribute="bottom" id="i8v-ed-sr3"/>
+                <constraint firstItem="FM0-kX-8eO" firstAttribute="leading" secondItem="fa6-i7-bbR" secondAttribute="trailing" id="mRM-n9-zBc"/>
+                <constraint firstItem="rPc-VU-RqF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="seS-ea-Z9A"/>
+                <constraint firstAttribute="trailing" secondItem="mUl-10-9kW" secondAttribute="trailing" id="vww-20-a8o"/>
+                <constraint firstAttribute="bottom" secondItem="FM0-kX-8eO" secondAttribute="bottom" id="yIT-mT-ad3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="140" height="193"/>
+            <connections>
+                <outlet property="imageView" destination="mUl-10-9kW" id="qjc-uT-Dz2"/>
+                <outlet property="likeButton" destination="FM0-kX-8eO" id="WsQ-EX-GXK"/>
+                <outlet property="ratingLabel" destination="fa6-i7-bbR" id="AOs-lJ-iCe"/>
+                <outlet property="titleLabel" destination="rPc-VU-RqF" id="gxH-cb-Xbg"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="121.54017857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-like" width="25" height="25"/>
+        <image name="placeholder-movieimage" width="350" height="509.5"/>
+    </resources>
+</document>
